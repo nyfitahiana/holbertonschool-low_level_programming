@@ -2,17 +2,18 @@
 #include <time.h>
 #include <stdio.h>
 /**
- ** main - prints all single digit numbers of base 10
- *
- ** Return: Always 0 (Success)
+ * main - Entry point
+ ** Description: 'prints numbers of base 10'
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	for (int i = 0; i < 10; i++)
+	int n;
+
+	for (n = 0; n <= 9; n++)
 	{
-		putchar(i + '0');
-		putchar(' ');
+		printf("%d", n);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
