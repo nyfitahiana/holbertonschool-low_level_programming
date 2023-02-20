@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-#include <stdio.h>                                              
+#include <stdio.h>
 /* betty style doc for function main goes there */
 /**
  ** main - the alphabet in lowercase and in uppercase
@@ -24,8 +24,6 @@ int main(void)
 		putchar(uppercase);
 		uppercase++;
 	}
-
 	putchar('\n');
-
-	return (0);                       
-}                                                               
+	return (0);
+}
