@@ -5,7 +5,7 @@
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
- * This function generates a random number and checks if it is positive,negative, or zero.
+ * It generates a random number if it is positive,negative, or zero.
  *
  * Return: Always 0 (Success)
  */
