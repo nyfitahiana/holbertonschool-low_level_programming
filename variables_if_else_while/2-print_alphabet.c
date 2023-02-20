@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/* This program prints the lowercase alphabet to the console. */
 int main(void)
 {
 	char letter = 'a';
