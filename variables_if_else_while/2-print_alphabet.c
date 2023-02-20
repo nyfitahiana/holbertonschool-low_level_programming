@@ -1,5 +1,10 @@
 #include <stdio.h>
-/* This program prints the lowercase alphabet to the console. */
+/**
+ * 
+ * main - Entry point
+ * 
+ * Retur: Always 0 (Success)
+ */
 int main(void)
 {
 	char letter = 'a';
