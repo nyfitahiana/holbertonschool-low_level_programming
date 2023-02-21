@@ -4,9 +4,9 @@
 int _putchar(char c);
 void print_alphabet(void);
 #endif /* MAIN_H */
-#include <unistd.h>
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+#include <unistd.h>
 /**
  * main - Entry point
  *
