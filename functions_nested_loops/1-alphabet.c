@@ -4,12 +4,13 @@
 int _putchar(char c);
 void print_alphabet(void);
 #endif /* MAIN_H */
+#include <unistd.h>
 #include <stdio.h>
 #include "main.h"
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -23,13 +24,11 @@ int main(void)
  */
 void print_alphabet(void)
 {
-	char c = 'a';
+	char letter;
 
-	while (c <= 'z')
-
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar(c);
-		c++;
+		putchar(letter);
 	}
 	putchar('\n');
 }
