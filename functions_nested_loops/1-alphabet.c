@@ -1,10 +1,10 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef ALPHABET_H
+#define ALPHABET_H
 
 int _putchar(char c);
 void print_alphabet(void);
-#endif /* MAIN_H */
-#include "main.c"
+#endif /* ALPHABET_H */
+#include "alphabet.h"
 #include <stdio.h>
 #include <unistd.h>
 /**
