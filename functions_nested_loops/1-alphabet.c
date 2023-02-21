@@ -1,9 +1,9 @@
-#ifndef MAIN_C
-#define MAIN_C
+#ifndef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
 void print_alphabet(void);
-#endif /* MAIN_C */
+#endif /* MAIN_H */
 #include "main.c"
 #include <stdio.h>
 #include <unistd.h>
