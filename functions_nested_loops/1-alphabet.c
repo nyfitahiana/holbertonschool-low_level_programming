@@ -1,34 +1,13 @@
-#ifndef ALPHABET_H
-#define ALPHABET_H
-
-int _putchar(char c);
-void print_alphabet(void);
-#endif /* ALPHABET_H */
-#include "alphabet.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (success)
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-/**
- * print_alphabet - prints the alphabet in lowercase
- *
- * Return: void
+ * print_alphabet - print all alphabet in lowercase
  */
 void print_alphabet(void)
 {
 	char letter;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-		putchar(letter);
-	}
-	putchar('\n');
+	for(letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+	_putchar(''\n');
 }
+
