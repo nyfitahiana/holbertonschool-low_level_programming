@@ -1,11 +1,3 @@
 all: main.c school.c
-
-school: main.o school.o 
-	gcc -o prog main.o school.o
-
-main.o : main.c
-	gcc -c -Wall main.c
-
-school.o : school.c
-	gcc -c -Wall school.c
+	gcc main.c school.c -o school
 
