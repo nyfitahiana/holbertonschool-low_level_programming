@@ -1,3 +1,5 @@
+all: school
+
 school: main.o school.o 
 	gcc -o prog main.o school.o
 
