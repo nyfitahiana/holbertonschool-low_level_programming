@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print-numbers - functions that prints the number
+ * print_numbers - function that checks for uppercase character
  * Return: 0
  */
 void print_numbers(void)
