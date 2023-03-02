@@ -15,7 +15,7 @@ char *leet(char *s)
 	{
 		for (i = 0; i < 5; i++)
 		{
-		if (s[i] ==  a[i] || *s == a[i] - 32)
+		if (*s ==  a[i] || *s == a[i] - 32)
 		*s = n[i] + '0';
 		}
 		s++;
