@@ -28,29 +28,29 @@ int _strlen(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int a, b, c, d;
-	char *i;
+	char *nstr;
+	unsigned int idx, jdx, s1l, s2l;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	c = _strlen(s1);
-	d = _strlen(s2);
+	s1l = _strlen(s1);
+	s2l = _strlen(s2);
 
-	n = (n >= d) ? d : n;
+	n = (n >= s2l) ? s2l : n;
 
-	i = malloc((c + n) * sizeof(char) + 1);
-	if (!i)
+	nstr = malloc((s1l + n) * sizeof(char) + 1);
+	if (!nstr)
 		return (NULL);
 
-	for (a = 0; a < c; a++)
-		i[a] = s1[a];
+	for (idx = 0; idx < s1l; idx++)
+		nstr[idx] = s1[idx];
 
-	for (b = 0; b < n; b++, a++)
-		i[a] = s2[a];
+	for (jdx = 0; jdx < n; jdx++, idx++)
+		nstr[idx] = s2[jdx];
 
-	i[a] = '\0';
-	return (i);
+	nstr[idx] = '\0';
+	return (nstr);
 }
