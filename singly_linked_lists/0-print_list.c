@@ -1,12 +1,11 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * size_t - return type of the function
  * print_list - prints all the elements of a list_t
- * list_t - the structure
  * @h: the pointer
- * Return: number of nodes
+ * Return: number of nodes in h.
  */
+
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
@@ -23,5 +22,5 @@ size_t print_list(const list_t *h)
 		h = h->next;
 	}
 
-	return count;
+	return (count);
 }
